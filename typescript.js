@@ -16,7 +16,7 @@ var eyeColor = 'brown';
 // string using template literals
 var favouriteQuote = "I'm not young, i'm " + age;
 // Array of string
-var animals = ['cat', 'elephant', 'jaguar', eyeColor, favouriteQuote];
+var animals = ['cat', 'elephant', 'jaguar'];
 var names = [{
         name: 'test',
         age: 23,

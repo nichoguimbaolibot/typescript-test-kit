@@ -21,7 +21,7 @@ let eyeColor: string = 'brown';
 // string using template literals
 let favouriteQuote: string = `I'm not young, i'm ${age}`
 // Array of string
-let animals: string[] = ['cat', 'elephant', 'jaguar', eyeColor, favouriteQuote];
+let animals: string[] = ['cat', 'elephant', 'jaguar'];
 // Array of object
 interface objectLayout {
   name: string,
