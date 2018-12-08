@@ -7,10 +7,6 @@ const string = (a: string, b: string): string => {
 }
 const sumAnswer = sum1(1, 2)
 
-console.log('string answer: ', string(`test${sumAnswer}`, ' hahaha'))
-
-
-
 // using of typescript according to data types
 // boolean
 let isCool: boolean = true;
@@ -49,7 +45,6 @@ let names1: Array<arrayObjectLayout> = [
   },
 ]
 
-console.log('arrayObject: ', names1)
 // object static typing tuple
 let car: {brand: string, plateNum: number, color: string, isManual: boolean} = {
   brand: 'chevrolet',
@@ -57,8 +52,6 @@ let car: {brand: string, plateNum: number, color: string, isManual: boolean} = {
   color: 'red',
   isManual: true,
 }
-
-console.log('object: ', car)
 
 // undefined and null static typing
 
@@ -72,3 +65,34 @@ let impossible: null = null;
 let arrays: [string, number, boolean] = [
   'cars', 1, false
 ]
+
+enum Size { Small = 1, Medium = 2, Large = 3}
+// enum is accessible by two ways by the value and by the variable
+// example: Size["Small"] === 1 or Size[1] === "Small"
+let sizeName: string = Size[2]
+
+// Any - !!!!  Shouldn't be use often
+let anything: any = "String"
+
+// void can return functions but any data types will return an error
+this.string = 'string'
+let faceless = (): void => {
+  this.string = 'nothing'
+}
+
+faceless()
+this.test = 'test'
+let doSomething = (): void => {
+  return faceless()
+}
+
+// never is a function where you dont return anything
+// use never if you are throwing an error or any function that wont return anything
+this.number = 1;
+let sing = (): never => {
+  do{
+    this.number
+  }while(true)
+}
+let y = 1;
+console.log(y)
