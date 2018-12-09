@@ -76,3 +76,20 @@ var sing = function () {
 };
 var y = 1;
 console.log(y);
+var zombieArmy = {
+    counts: 1000,
+    ability: "Swim",
+    strength: 100
+};
+var humanArmy = {
+    counts: 100,
+    ability: 'advanced technology',
+    strength: 500
+};
+var zombieWar = function (humans, zombies) {
+    console.log('Humans: ', humans);
+    console.log('Zombies: ', zombies);
+};
+zombieWar(humanArmy, zombieArmy);
+var robocop = {};
+console.log('robocop: ', robocop.counts);

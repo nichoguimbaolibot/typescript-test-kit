@@ -96,3 +96,53 @@ let sing = (): never => {
 }
 let y = 1;
 console.log(y)
+
+// interface
+interface ZombieArmy {
+  counts: number,
+  ability: string,
+  strength: number,
+}
+
+let zombieArmy: ZombieArmy = {
+  counts: 1000,
+  ability: "Swim",
+  strength: 100,
+}
+
+interface HumanArmy {
+  counts: number,
+  ability: string,
+  strength: number,
+  special?: string,
+}
+
+let humanArmy: HumanArmy = {
+  counts: 100,
+  ability:'advanced technology',
+  strength: 500,
+}
+
+let zombieWar = (humans: HumanArmy, zombies: ZombieArmy ): void => {
+  console.log('Humans: ', humans)
+  console.log('Zombies: ', zombies)
+}
+
+zombieWar(humanArmy, zombieArmy)
+
+// type assertion
+// Type assertion shouldn't be use often
+// Conclusion: This can be use on a data or from an API that has a missing field
+// including a "?" on a field of an interface is an indication that the field can have no value or have it
+interface AIArmy {
+  counts: number,
+  ability: string,
+  strength: number,
+  special?: string,
+}
+
+let robocop = {
+
+} as AIArmy
+
+console.log('robocop: ', robocop.counts)
