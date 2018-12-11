@@ -146,3 +146,10 @@ let robocop = {
 } as AIArmy
 
 console.log('robocop: ', robocop.counts)
+// experimentation of as code in typescript
+let functional = (robots: AIArmy) => {
+  let robo = {
+    ...robots 
+  } as AIArmy
+  console.log(robots)
+}
