@@ -124,8 +124,6 @@ let humanArmy: HumanArmy = {
 }
 
 let zombieWar = (humans: HumanArmy, zombies: ZombieArmy ): void => {
-  console.log('Humans: ', humans)
-  console.log('Zombies: ', zombies)
 }
 
 zombieWar(humanArmy, zombieArmy)
@@ -145,7 +143,6 @@ let robocop = {
 
 } as AIArmy
 
-console.log('robocop: ', robocop.counts)
 // experimentation of as code in typescript
 let functional = (robots: AIArmy) => {
   let robo = {
@@ -153,3 +150,20 @@ let functional = (robots: AIArmy) => {
   } as AIArmy
   console.log(robots)
 }
+
+let pest = "langaw"
+
+let func = (army: AIArmy): void => {
+  this.state = {
+    test: "400"
+  }
+  return this.state.test;
+}
+
+let army: AIArmy = {
+  counts: 200,
+  ability: "hydro cannon",
+  strength: 1000,
+}
+
+console.log(func(army))

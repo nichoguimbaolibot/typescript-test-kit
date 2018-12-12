@@ -98,14 +98,24 @@ var humanArmy = {
     strength: 500
 };
 var zombieWar = function (humans, zombies) {
-    console.log('Humans: ', humans);
-    console.log('Zombies: ', zombies);
 };
 zombieWar(humanArmy, zombieArmy);
 var robocop = {};
-console.log('robocop: ', robocop.counts);
 // experimentation of as code in typescript
 var functional = function (robots) {
     var robo = __assign({}, robots);
     console.log(robots);
 };
+var pest = "langaw";
+var func = function (army) {
+    _this.state = {
+        test: "400"
+    };
+    return _this.state.test;
+};
+var army = {
+    counts: 200,
+    ability: "hydro cannon",
+    strength: 1000
+};
+console.log(func(army));
