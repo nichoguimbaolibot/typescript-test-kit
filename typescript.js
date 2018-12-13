@@ -119,3 +119,23 @@ var army = {
     strength: 1000
 };
 console.log(func(army));
+// function return type strict
+var armyWar = function (army1, army2) {
+    var army = {};
+    return army + " has won.";
+};
+// class
+var Animal = /** @class */ (function () {
+    function Animal(sound) {
+        // private is only accessible inside the class
+        // private sing: string = "tralalalala"
+        this.sing = "tralalalalala";
+        this.sing = sound;
+    }
+    Animal.prototype.greet = function () {
+        return "My animal sound is \"" + this.sing + "\"";
+    };
+    return Animal;
+}());
+var lion = new Animal("rawwwr");
+console.log(lion.greet());

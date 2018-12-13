@@ -1,11 +1,11 @@
-const sum1 = (a: number, b: number): number => {
+let sum1 = (a: number, b: number): number => {
  return a + b;
 }
 
-const string = (a: string, b: string): string => {
+let string = (a: string, b: string): string => {
   return a + b
 }
-const sumAnswer = sum1(1, 2)
+let sumAnswer = sum1(1, 2)
 
 // using of typescript according to data types
 // boolean
@@ -167,3 +167,36 @@ let army: AIArmy = {
 }
 
 console.log(func(army))
+
+interface warRequirements {
+  counts: number,
+  ability: string,
+  strength: number,
+  special?: string,
+}
+// function return type strict
+let armyWar = (army1: warRequirements, army2: warRequirements): string => {
+  let army = {} as warRequirements;
+  
+  return `${army} has won.`
+}
+
+
+// class
+
+class Animal {
+  // private is only accessible inside the class
+  // private sing: string = "tralalalala"
+  sing: string = "tralalalalala";
+  constructor(sound?: string) {
+    this.sing = sound;
+  }
+
+  greet() {
+    return `My animal sound is "${this.sing}"`
+  }
+}
+
+let lion = new Animal("rawwwr")
+
+console.log(lion.greet())
