@@ -69,7 +69,7 @@ let arrays: [string, number, boolean] = [
 enum Size { Small = 1, Medium = 2, Large = 3}
 // enum is accessible by two ways by the value and by the variable
 // example: Size["Small"] === 1 or Size[1] === "Small"
-let sizeName: string = Size[2]
+let sizeName: number | string = Size[1]
 
 // Any - !!!!  Shouldn't be use often
 let anything: any = "String"
@@ -204,4 +204,5 @@ console.log(lion.greet())
 // Union
 // union is being used if you accept multiple type of data types
 // This can be use on datas that return multiple types
+// Union is also good in Enums
 let numberOrString: string | number = "string"

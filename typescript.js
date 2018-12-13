@@ -64,7 +64,7 @@ var Size;
 })(Size || (Size = {}));
 // enum is accessible by two ways by the value and by the variable
 // example: Size["Small"] === 1 or Size[1] === "Small"
-var sizeName = Size[2];
+var sizeName = Size[1];
 // Any - !!!!  Shouldn't be use often
 var anything = "String";
 // void can return functions but any data types will return an error
@@ -142,4 +142,5 @@ console.log(lion.greet());
 // Union
 // union is being used if you accept multiple type of data types
 // This can be use on datas that return multiple types
+// Union is also good in Enums
 var numberOrString = "string";
