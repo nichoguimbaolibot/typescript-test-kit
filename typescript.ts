@@ -200,3 +200,8 @@ class Animal {
 let lion = new Animal("rawwwr")
 
 console.log(lion.greet())
+
+// Union
+// union is being used if you accept multiple type of data types
+// This can be use on datas that return multiple types
+let numberOrString: string | number = "string"
